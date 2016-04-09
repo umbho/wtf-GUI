@@ -1,1 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        
+        <style>
+            
+            nav {
+                z-index: 2;
+                position: fixed;
+            }
+            
+            .nav-wrapper{
+                padding: 0 20px;
+                background-color: #FF5722;
+            }
+            
+            .btn-floating {
+                background-color: #FF5722;
+            }
+            
+            .btn-floating:hover {
+                z-index: 2;
+                position: fixed;
+                background-color: #ffa58a;
+            }
+            
+            .sensor-card {
+                display: inline-block;
+                margin: 20px;
+                width: 400px;
+                height: 130px;
+            }
+            
+            .grid-view {
+                
+                position: relative;
+                z-index: 0;
+                top: 64px;
+                padding: 20px;
+            }
+            
+            .card-content {
+                width: 270px;
+                float: right;
+            }
+            
+            .card-content p {
+                color: #a0a0a0;
+            }
+            
+            .sensor-image {
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+                transition: all .3s ease;
+            }
+            
+            .sensor-image:hover {
+                opacity: 0.7;
+            }
+            
+            .sensor-active {
+                font-size: 12px;
+                font-weight: bold;
+                position: relative;
+                bottom: 0;
+                color: #a0a0a0;
+            }
+            
+            .material-icons {
+                cursor: default;
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <nav>
+            <div class="nav-wrapper">
+                
+                <i class="material-icons" style="display:inline;">menu</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="vertical-align: top; font-size: 20px;">Dashboard</span>           
+                
+            </div>
+        </nav>
+        
+        <div class="grid-view">
+            
+            <div style="font-size: 14px; color: #a0a0a0; padding-left:20px; line-height: 40px;">Active sensors:</div>
+            
+            <div class="card sensor-card">
+                
+                <img class="sensor-image" src="phone.jpg" style="display:inline;cursor:pointer;">
+                <div class="card-content" style="display:inline;">
+                    <i class="material-icons" style="float:right;">more_vert</i>
+                    <span class="card-title" style="line-height:initial;">Smartphone</span>
+                    <p>Paired</p>
+                    <span class="sensor-active">ACTIVE</span>
+                </div>
+          </div>
+            
+            <div class="card sensor-card">
+                
+                <img class="sensor-image" src="light.jpg" style="display:inline;cursor:pointer;">
+                <div class="card-content" style="display:inline;">
+                    <i class="material-icons" style="float:right;">more_vert</i>
+                    <span class="card-title" style="line-height:initial;">Wall light</span>
+                    <p>Living</p>
+                    <span class="sensor-active">ACTIVE</span>
+                </div>
+          </div>
+            
+            <div class="card sensor-card">
+                
+                <img class="sensor-image" src="window.jpg" style="display:inline;cursor:pointer;">
+                <div class="card-content" style="display:inline;">
+                    <i class="material-icons" style="float:right;">more_vert</i>
+                    <span class="card-title" style="line-height:initial;">Window</span>
+                    <p>Kitchen</p>
+                    <span class="sensor-active">ACTIVE</span>
+                </div>
+          </div>
+            
+            <div class="card sensor-card">
+                
+                <img class="sensor-image" src="window.jpg" style="display:inline;cursor:pointer;">
+                <div class="card-content" style="display:inline;">
+                    <i class="material-icons" style="float:right;">more_vert</i>
+                    <span class="card-title" style="line-height:initial;">Window</span>
+                    <p>Living</p>
+                    <span class="sensor-active">ACTIVE</span>
+                </div>
+          </div>
+            
+            <div class="card sensor-card">
+                
+                <img class="sensor-image" src="light.jpg" style="display:inline;cursor:pointer;">
+                <div class="card-content" style="display:inline;">
+                    <i class="material-icons" style="float:right;">more_vert</i>
+                    <span class="card-title" style="line-height:initial;">Wall light</span>
+                    <p>Living</p>
+                    <span class="sensor-active">ACTIVE</span>
+                </div>
+          </div>
+            
+            <div class="card sensor-card">
+                
+                <img class="sensor-image" src="light.jpg" style="display:inline;cursor:pointer;">
+                <div class="card-content" style="display:inline;">
+                    <i class="material-icons" style="float:right;">more_vert</i>
+                    <span class="card-title" style="line-height:initial;">Wall light</span>
+                    <p>Living</p>
+                    <span class="sensor-active">ACTIVE</span>
+                </div>
+          </div>
+            
+            <div class="card sensor-card">
+                
+                <img class="sensor-image" src="window.jpg" style="display:inline;cursor:pointer;">
+                <div class="card-content" style="display:inline;">
+                    <i class="material-icons" style="float:right;">more_vert</i>
+                    <span class="card-title" style="line-height:initial;">Window</span>
+                    <p>Bathroom</p>
+                    <span class="sensor-active">ACTIVE</span>
+                </div>
+          </div>
+            
+            <div class="card sensor-card">
+                
+                <img class="sensor-image" src="light.jpg" style="display:inline;cursor:pointer;">
+                <div class="card-content" style="display:inline;">
+                    <i class="material-icons" style="float:right;">more_vert</i>
+                    <span class="card-title" style="line-height:initial;">Wall light</span>
+                    <p>Living</p>
+                    <span class="sensor-active">ACTIVE</span>
+                </div>
+          </div>
 
+        </div>
+        
+        <a class="btn-floating btn-large waves-effect waves-light" style="position: absolute;bottom: 20px; right: 20px;"><i class="material-icons">add</i></a>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+</html>
